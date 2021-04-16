@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_add_categories"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/teal_200"
+        app:tabMode="auto"
+        app:tabSelectedTextColor="@color/design_default_color_primary"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_add_event_categories"/>
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/chuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:iconSize="20dp"
+        android:src="@android:drawable/ic_menu_preferences"
+         />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tab_layout_main_categories"
+       android:layout_width="match_parent"
+       android:background="@color/white"
+       app:tabSelectedTextColor="@color/design_default_color_primary"
+       app:tabTextColor="@color/teal_200"
+       android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_below="@id/tab_layout_main_categories"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_main_categories"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_main_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/baseline_add_circle_white_36"
+        app:iconTint="@android:color/white"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

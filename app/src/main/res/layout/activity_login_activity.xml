@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_login"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="multiply"
+    android:layout_height="match_parent"
+
+    tools:context=".Login_activity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="75dp">
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/color_gradient"
+        android:src="@drawable/baseline_savings_white_48"
+        />
+    </androidx.cardview.widget.CardView>
+<EditText
+
+    android:background="@drawable/border_edittext"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="10dp"
+    android:paddingVertical="15dp"
+    android:layout_below="@id/logo"
+    android:textSize="15sp"
+    android:textColorHint="@color/teal_200"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Email"
+    android:id="@+id/ed_email"/>
+    <EditText
+
+        android:background="@drawable/border_edittext"
+        android:paddingVertical="15dp"
+        android:inputType="textPassword"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textColorHint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:id="@+id/ed_password"
+        android:layout_below="@id/ed_email"/>
+<Button
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:text="login"
+    android:textAllCaps="false"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/border_bt_login"
+    android:id="@+id/btn_login"
+
+    android:layout_below="@id/ed_password"/>
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="20dp"
+    android:text="@string/google_sign_up"
+    app:isDarkTheme="true"
+    android:layout_below="@id/btn_login"
+    android:id="@+id/SignGoogle"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_signup"
+        android:layout_below="@id/SignGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Don't have an Account? Register"
+        android:layout_marginTop="25dp"
+        />
+</RelativeLayout>
