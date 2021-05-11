@@ -6,7 +6,7 @@
     <item
         android:icon="@android:drawable/ic_menu_info_details"
         android:id="@+id/nav_account"
-        android:title="My Account" />
+        android:title="Change Password" />
     <item
         android:icon="@android:drawable/ic_menu_manage"
         android:id="@+id/nav_setting"
